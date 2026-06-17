@@ -1,4 +1,4 @@
-# Flappy Bird Clone - QA Automation Sandbox 🎮🧪
+# Flappy Bird Clone - QA Automation 
 
 This project is a clone of the popular [FlapPyBird repository](https://github.com/sourabhv/FlapPyBird.git), enhanced with an automated test suite to demonstrate **Game QA Automation** principles.
 
@@ -36,7 +36,13 @@ Controls: Use `Space` or `Up Arrow` to jump, `Esc` to close.
 
 ---
 
-## 🧪 Run Automated Tests
+## Run Automated Tests
+
+### Description of the tests
+`test_boundary_and_physics`: This test verifies that the bird's downward velocity correctly increases on each game tick due to gravity, and that simulating a "flap" action properly overrides this to an upward velocity.
+`test_collision_detection_logic`: This test checks the game's collision system by manually positioning the bird so it overlaps with the floor and confirming that a collision is detected and correctly recorded as crashing into the floor.
+`test_scoring_logic`: This test ensures that the game can properly detect when a player successfully navigates an obstacle by confirming the crossing logic triggers once the bird's horizontal center position passes the back edge of a pipe.
+`test_state_management`: This test validates the game's internal state progression by ensuring the bird initializes in an idle "floating" state (SHM), properly transitions into an active playing state (NORMAL), and finally can be put into a crashed state (CRASH).
 
 ### Stable Build Validation
 To avoid UI flashing and reduce execution overhead during continuous integration, the tests run headlessly using unittest.mock to patch Pygame’s window components globally.
@@ -79,7 +85,7 @@ pytest tests/test_game_logic.py --html=reports/mutation_test_report.html --self-
 
 ![Failed tests report](readme_images/failed_tests_image.png)
 
-**Verification Command:**
+**Reverse the code to the valid state:**
 ```powershell
 git checkout src/
 ```
