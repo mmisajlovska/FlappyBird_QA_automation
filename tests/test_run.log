@@ -1,0 +1,195 @@
+2026-06-17 17:54:21,835 - INFO - === Starting Test Suite: TestGameLogic ===
+2026-06-17 17:54:21,836 - INFO - [TEST START] test_boundary_and_physics
+2026-06-17 17:54:21,836 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:54:21,838 - INFO - Setting player mode to NORMAL to activate physics
+2026-06-17 17:54:21,838 - INFO - Simulating a game tick (Gravity check). Initial Y: 244, Initial Vel: -9
+2026-06-17 17:54:21,844 - INFO - Asserting that velocity increases due to gravity
+2026-06-17 17:54:21,844 - INFO - Assertion passed: Velocity increased.
+2026-06-17 17:54:21,844 - INFO - Simulating a player flap
+2026-06-17 17:54:21,844 - INFO - Asserting that flapping sets negative velocity (upward movement)
+2026-06-17 17:54:21,844 - INFO - Assertion passed: Flapping logic sets correct velocity.
+2026-06-17 17:54:21,844 - INFO - [TEST PASSED] test_boundary_and_physics
+2026-06-17 17:54:21,844 - INFO - [TEST START] test_collision_detection_logic
+2026-06-17 17:54:21,844 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:54:21,846 - INFO - Setting up Player and Floor for collision check
+2026-06-17 17:54:21,856 - INFO - Asserting player.collided returns True when overlapping with floor
+2026-06-17 17:54:21,856 - INFO - Assertion passed: Floor collision detected successfully.
+2026-06-17 17:54:21,857 - INFO - Asserting that crash entity is correctly set to 'floor'
+2026-06-17 17:54:21,857 - INFO - Assertion passed: Crash entity logged as 'floor'.
+2026-06-17 17:54:21,857 - INFO - [TEST PASSED] test_collision_detection_logic
+2026-06-17 17:54:21,857 - INFO - [TEST START] test_scoring_logic
+2026-06-17 17:54:21,857 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:54:21,859 - INFO - Setting up Player and Pipe for scoring logic check
+2026-06-17 17:54:21,859 - INFO - Asserting player.crossed(pipe) is True when player X (74.0) > pipe X (73.0)
+2026-06-17 17:54:21,859 - INFO - Assertion passed: Pipe crossing detected successfully.
+2026-06-17 17:54:21,859 - INFO - [TEST PASSED] test_scoring_logic
+2026-06-17 17:54:21,859 - INFO - [TEST START] test_state_management
+2026-06-17 17:54:21,859 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:54:21,861 - INFO - Asserting initial Idle state (SHM)
+2026-06-17 17:54:21,861 - INFO - Assertion passed: Idle state confirmed.
+2026-06-17 17:54:21,861 - INFO - Transitioning to Active (NORMAL) state
+2026-06-17 17:54:21,862 - INFO - Assertion passed: Active state transition confirmed.
+2026-06-17 17:54:21,862 - INFO - Transitioning to Game Over (CRASH) state
+2026-06-17 17:54:21,862 - INFO - Assertion passed: Game Over state transition confirmed.
+2026-06-17 17:54:21,862 - INFO - [TEST PASSED] test_state_management
+2026-06-17 17:54:21,862 - INFO - === Finished Test Suite: TestGameLogic ===
+
+2026-06-17 17:56:36,025 - INFO - === Starting Test Suite: TestGameLogic ===
+2026-06-17 17:56:36,026 - INFO - [TEST START] test_boundary_and_physics
+2026-06-17 17:56:36,026 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:56:36,027 - INFO - Setting player mode to NORMAL to activate physics
+2026-06-17 17:56:36,027 - INFO - Simulating a game tick (Gravity check). Initial Y: 244, Initial Vel: -9
+2026-06-17 17:56:36,027 - INFO - Asserting that velocity increases due to gravity
+2026-06-17 17:56:36,027 - INFO - Assertion passed: Velocity increased.
+2026-06-17 17:56:36,028 - INFO - Simulating a player flap
+2026-06-17 17:56:36,028 - INFO - Asserting that flapping sets negative velocity (upward movement)
+2026-06-17 17:56:36,028 - INFO - Assertion passed: Flapping logic sets correct velocity.
+2026-06-17 17:56:36,028 - INFO - [TEST PASSED] test_boundary_and_physics
+2026-06-17 17:56:36,029 - INFO - [TEST START] test_collision_detection_logic
+2026-06-17 17:56:36,029 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:56:36,030 - INFO - Setting up Player and Floor for collision check
+2026-06-17 17:56:36,040 - INFO - Asserting player.collided returns True when overlapping with floor
+2026-06-17 17:56:36,041 - INFO - Assertion passed: Floor collision detected successfully.
+2026-06-17 17:56:36,041 - INFO - Asserting that crash entity is correctly set to 'floor'
+2026-06-17 17:56:36,041 - INFO - Assertion passed: Crash entity logged as 'floor'.
+2026-06-17 17:56:36,041 - INFO - [TEST PASSED] test_collision_detection_logic
+2026-06-17 17:56:36,042 - INFO - [TEST START] test_scoring_logic
+2026-06-17 17:56:36,042 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:56:36,043 - INFO - Setting up Player and Pipe for scoring logic check
+2026-06-17 17:56:36,043 - INFO - Asserting player.crossed(pipe) is True when player X (74.0) > pipe X (73.0)
+2026-06-17 17:56:36,043 - INFO - Assertion passed: Pipe crossing detected successfully.
+2026-06-17 17:56:36,043 - INFO - [TEST PASSED] test_scoring_logic
+2026-06-17 17:56:36,043 - INFO - [TEST START] test_state_management
+2026-06-17 17:56:36,044 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 17:56:36,046 - INFO - Asserting initial Idle state (SHM)
+2026-06-17 17:56:36,046 - INFO - Assertion passed: Idle state confirmed.
+2026-06-17 17:56:36,046 - INFO - Transitioning to Active (NORMAL) state
+2026-06-17 17:56:36,046 - INFO - Assertion passed: Active state transition confirmed.
+2026-06-17 17:56:36,046 - INFO - Transitioning to Game Over (CRASH) state
+2026-06-17 17:56:36,047 - INFO - Assertion passed: Game Over state transition confirmed.
+2026-06-17 17:56:36,047 - INFO - [TEST PASSED] test_state_management
+2026-06-17 17:56:36,047 - INFO - === Finished Test Suite: TestGameLogic ===
+
+2026-06-17 18:09:22,571 - INFO - === Starting Test Suite: TestGameLogic ===
+2026-06-17 18:09:22,572 - INFO - [TEST START] test_boundary_and_physics
+2026-06-17 18:09:22,572 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:09:22,573 - INFO - Setting player mode to NORMAL to activate physics
+2026-06-17 18:09:22,573 - INFO - Simulating a game tick (Gravity check). Initial Y: 244, Initial Vel: -9
+2026-06-17 18:09:22,573 - INFO - Asserting that velocity increases due to gravity
+2026-06-17 18:09:22,573 - INFO - Assertion passed: Velocity increased.
+2026-06-17 18:09:22,573 - INFO - Simulating a player flap
+2026-06-17 18:09:22,573 - INFO - Asserting that flapping sets negative velocity (upward movement)
+2026-06-17 18:09:22,574 - ERROR - Assertion failed in test_boundary_and_physics: 0 != -9 : Flapping should set velocity to flap_acc
+2026-06-17 18:09:22,574 - ERROR - [TEST FAILED] test_boundary_and_physics: Traceback (most recent call last):
+  File "C:\Users\Marija\Desktop\FlappyBird_QA_Tests\FlapPyBird\tests\test_game_logic.py", line 67, in test_boundary_and_physics
+    self.assertEqual(self.player.vel_y, self.player.flap_acc, "Flapping should set velocity to flap_acc")
+AssertionError: 0 != -9 : Flapping should set velocity to flap_acc
+
+2026-06-17 18:10:23,540 - INFO - === Starting Test Suite: TestGameLogic ===
+2026-06-17 18:10:23,541 - INFO - [TEST START] test_boundary_and_physics
+2026-06-17 18:10:23,541 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:10:23,542 - INFO - Setting player mode to NORMAL to activate physics
+2026-06-17 18:10:23,542 - INFO - Simulating a game tick (Gravity check). Initial Y: 244, Initial Vel: -9
+2026-06-17 18:10:23,542 - INFO - Asserting that velocity increases due to gravity
+2026-06-17 18:10:23,542 - INFO - Assertion passed: Velocity increased.
+2026-06-17 18:10:23,543 - INFO - Simulating a player flap
+2026-06-17 18:10:23,543 - INFO - Asserting that flapping sets negative velocity (upward movement)
+2026-06-17 18:10:23,543 - ERROR - Assertion failed in test_boundary_and_physics: 0 != -9 : Flapping should set velocity to flap_acc
+2026-06-17 18:10:23,543 - ERROR - [TEST FAILED] test_boundary_and_physics: Traceback (most recent call last):
+  File "C:\Users\Marija\Desktop\FlappyBird_QA_Tests\FlapPyBird\tests\test_game_logic.py", line 67, in test_boundary_and_physics
+    self.assertEqual(self.player.vel_y, self.player.flap_acc, "Flapping should set velocity to flap_acc")
+AssertionError: 0 != -9 : Flapping should set velocity to flap_acc
+
+2026-06-17 18:12:23,433 - INFO - === Starting Test Suite: TestGameLogic ===
+2026-06-17 18:12:23,433 - INFO - [TEST START] test_boundary_and_physics
+2026-06-17 18:12:23,434 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:12:23,435 - INFO - Setting player mode to NORMAL to activate physics
+2026-06-17 18:12:23,435 - INFO - Simulating a game tick (Gravity check). Initial Y: 244, Initial Vel: -9
+2026-06-17 18:12:23,435 - INFO - Asserting that velocity increases due to gravity
+2026-06-17 18:12:23,435 - INFO - Assertion passed: Velocity increased.
+2026-06-17 18:12:23,436 - INFO - Simulating a player flap
+2026-06-17 18:12:23,436 - INFO - Asserting that flapping sets negative velocity (upward movement)
+2026-06-17 18:12:23,436 - ERROR - Assertion failed in test_boundary_and_physics: 0 != -9 : Flapping should set velocity to flap_acc
+2026-06-17 18:12:23,436 - ERROR - [TEST FAILED] test_boundary_and_physics: Traceback (most recent call last):
+  File "C:\Users\Marija\Desktop\FlappyBird_QA_Tests\FlapPyBird\tests\test_game_logic.py", line 67, in test_boundary_and_physics
+    self.assertEqual(self.player.vel_y, self.player.flap_acc, "Flapping should set velocity to flap_acc")
+AssertionError: 0 != -9 : Flapping should set velocity to flap_acc
+
+2026-06-17 18:13:21,299 - INFO - === Starting Test Suite: TestGameLogic ===
+2026-06-17 18:13:21,301 - INFO - [TEST START] test_boundary_and_physics
+2026-06-17 18:13:21,301 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:13:21,303 - INFO - Setting player mode to NORMAL to activate physics
+2026-06-17 18:13:21,303 - INFO - Simulating a game tick (Gravity check). Initial Y: 244, Initial Vel: -9
+2026-06-17 18:13:21,306 - INFO - Asserting that velocity increases due to gravity
+2026-06-17 18:13:21,306 - INFO - Assertion passed: Velocity increased.
+2026-06-17 18:13:21,306 - INFO - Simulating a player flap
+2026-06-17 18:13:21,306 - INFO - Asserting that flapping sets negative velocity (upward movement)
+2026-06-17 18:13:21,306 - ERROR - Assertion failed in test_boundary_and_physics: 0 != -9 : Flapping should set velocity to flap_acc
+2026-06-17 18:13:21,307 - ERROR - [TEST FAILED] test_boundary_and_physics: Traceback (most recent call last):
+  File "C:\Users\Marija\Desktop\FlappyBird_QA_Tests\FlapPyBird\tests\test_game_logic.py", line 67, in test_boundary_and_physics
+    self.assertEqual(self.player.vel_y, self.player.flap_acc, "Flapping should set velocity to flap_acc")
+AssertionError: 0 != -9 : Flapping should set velocity to flap_acc
+
+2026-06-17 18:13:21,379 - INFO - [TEST START] test_collision_detection_logic
+2026-06-17 18:13:21,379 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:13:21,380 - INFO - Setting up Player and Floor for collision check
+2026-06-17 18:13:21,390 - INFO - Asserting player.collided returns True when overlapping with floor
+2026-06-17 18:13:21,390 - ERROR - Assertion failed in test_collision_detection_logic: False is not true : Player should register a collision when overlapping with the floor
+2026-06-17 18:13:21,391 - ERROR - [TEST FAILED] test_collision_detection_logic: Traceback (most recent call last):
+  File "C:\Users\Marija\Desktop\FlappyBird_QA_Tests\FlapPyBird\tests\test_game_logic.py", line 91, in test_collision_detection_logic
+    self.assertTrue(has_collided, "Player should register a collision when overlapping with the floor")
+AssertionError: False is not true : Player should register a collision when overlapping with the floor
+
+2026-06-17 18:13:21,396 - INFO - [TEST START] test_scoring_logic
+2026-06-17 18:13:21,396 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:13:21,397 - INFO - Setting up Player and Pipe for scoring logic check
+2026-06-17 18:13:21,397 - INFO - Asserting player.crossed(pipe) is True when player X (74.0) > pipe X (73.0)
+2026-06-17 18:13:21,397 - INFO - Assertion passed: Pipe crossing detected successfully.
+2026-06-17 18:13:21,397 - INFO - [TEST PASSED] test_scoring_logic
+2026-06-17 18:13:21,398 - INFO - [TEST START] test_state_management
+2026-06-17 18:13:21,398 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:13:21,399 - INFO - Asserting initial Idle state (SHM)
+2026-06-17 18:13:21,399 - INFO - Assertion passed: Idle state confirmed.
+2026-06-17 18:13:21,399 - INFO - Transitioning to Active (NORMAL) state
+2026-06-17 18:13:21,400 - INFO - Assertion passed: Active state transition confirmed.
+2026-06-17 18:13:21,400 - INFO - Transitioning to Game Over (CRASH) state
+2026-06-17 18:13:21,400 - INFO - Assertion passed: Game Over state transition confirmed.
+2026-06-17 18:13:21,400 - INFO - [TEST PASSED] test_state_management
+2026-06-17 18:13:21,401 - INFO - === Finished Test Suite: TestGameLogic ===
+
+2026-06-17 18:16:13,257 - INFO - === Starting Test Suite: TestGameLogic ===
+2026-06-17 18:16:13,258 - INFO - [TEST START] test_boundary_and_physics
+2026-06-17 18:16:13,258 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:16:13,259 - INFO - Setting player mode to NORMAL to activate physics
+2026-06-17 18:16:13,259 - INFO - Simulating a game tick (Gravity check). Initial Y: 244, Initial Vel: -9
+2026-06-17 18:16:13,262 - INFO - Asserting that velocity increases due to gravity
+2026-06-17 18:16:13,262 - INFO - Assertion passed: Velocity increased.
+2026-06-17 18:16:13,262 - INFO - Simulating a player flap
+2026-06-17 18:16:13,262 - INFO - Asserting that flapping sets negative velocity (upward movement)
+2026-06-17 18:16:13,262 - INFO - Assertion passed: Flapping logic sets correct velocity.
+2026-06-17 18:16:13,262 - INFO - [TEST PASSED] test_boundary_and_physics
+2026-06-17 18:16:13,264 - INFO - [TEST START] test_collision_detection_logic
+2026-06-17 18:16:13,264 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:16:13,265 - INFO - Setting up Player and Floor for collision check
+2026-06-17 18:16:13,276 - INFO - Asserting player.collided returns True when overlapping with floor
+2026-06-17 18:16:13,276 - INFO - Assertion passed: Floor collision detected successfully.
+2026-06-17 18:16:13,276 - INFO - Asserting that crash entity is correctly set to 'floor'
+2026-06-17 18:16:13,277 - INFO - Assertion passed: Crash entity logged as 'floor'.
+2026-06-17 18:16:13,277 - INFO - [TEST PASSED] test_collision_detection_logic
+2026-06-17 18:16:13,279 - INFO - [TEST START] test_scoring_logic
+2026-06-17 18:16:13,279 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:16:13,280 - INFO - Setting up Player and Pipe for scoring logic check
+2026-06-17 18:16:13,280 - INFO - Asserting player.crossed(pipe) is True when player X (74.0) > pipe X (73.0)
+2026-06-17 18:16:13,280 - INFO - Assertion passed: Pipe crossing detected successfully.
+2026-06-17 18:16:13,280 - INFO - [TEST PASSED] test_scoring_logic
+2026-06-17 18:16:13,282 - INFO - [TEST START] test_state_management
+2026-06-17 18:16:13,282 - INFO - Initializing dummy GameConfig and Player for test scenario
+2026-06-17 18:16:13,283 - INFO - Asserting initial Idle state (SHM)
+2026-06-17 18:16:13,283 - INFO - Assertion passed: Idle state confirmed.
+2026-06-17 18:16:13,283 - INFO - Transitioning to Active (NORMAL) state
+2026-06-17 18:16:13,283 - INFO - Assertion passed: Active state transition confirmed.
+2026-06-17 18:16:13,283 - INFO - Transitioning to Game Over (CRASH) state
+2026-06-17 18:16:13,284 - INFO - Assertion passed: Game Over state transition confirmed.
+2026-06-17 18:16:13,284 - INFO - [TEST PASSED] test_state_management
+2026-06-17 18:16:13,284 - INFO - === Finished Test Suite: TestGameLogic ===
+
